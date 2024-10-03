@@ -18,8 +18,10 @@ body {
 
 .header {
   background-color: #a785ed;
+
   display: flex;
   justify-content: space-between;
+
   margin-bottom: 40px;
   padding: 15px;
 }
@@ -30,12 +32,12 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 150%;
+
   color: #fdfdfd;
 }
 
 .btn-theme {
   cursor: pointer;
-  font-size: 16px;
 }
 
 .container {
@@ -47,13 +49,16 @@ body {
 .input {
   all: unset;
   box-sizing: border-box;
-  width: 100%;
-  max-width: 400px;
+
+  width: 400px;
+
   background: var(--background-color);
+
   margin-bottom: 40px;
   padding: 14px;
   border: 1px solid var(--input-border-color);
   border-radius: 8px;
+
   color: var(--color);
 }
 
@@ -90,20 +95,25 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
-  max-width: 168px;
+
+  width: 168px;
   height: 300px;
+
   display: flex;
   flex-direction: column;
+
   box-shadow: var(--shadow-color);
+
   cursor: pointer;
 }
 
 .movie__info {
   background: rgba(0, 0, 0, 0.8);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   margin-top: auto;
   padding: 10px 8px;
 }
@@ -114,10 +124,12 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 150%;
+
   max-width: 100px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
   color: #fdfdfd;
 }
 
@@ -127,6 +139,7 @@ body {
   font-weight: bold;
   font-size: 12px;
   line-height: 150%;
+
   color: #fbcd6e;
 }
 
@@ -136,20 +149,21 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 150%;
+
   margin-bottom: 16px;
+
   color: var(--color);
 }
 
 .highlight {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;
 }
 
 .highlight__video {
-  width: 100%;
-  max-width: 550px;
+  width: 550px;
   height: 340px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,8 +172,10 @@ body {
 .highlight__info {
   max-width: 360px;
   height: 340px;
+
   background: var(--highlight-background);
   box-shadow: var(--shadow-color);
+
   padding: 16px;
 }
 
@@ -167,6 +183,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   margin-bottom: 8px;
 }
 
@@ -176,6 +193,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 150%;
+
   color: #e183c8;
 }
 
@@ -185,6 +203,7 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 150%;
+
   color: #a785ed;
 }
 
@@ -194,8 +213,11 @@ body {
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
+
   text-transform: uppercase;
+
   color: var(--highlight-color);
+
   margin-bottom: 36px;
 }
 
@@ -205,20 +227,25 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
+
   color: var(--highlight-description);
 }
 
 .modal {
   background: rgba(0, 0, 0, 0.8);
+
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
   padding: 56px;
+
   overflow-y: scroll;
 }
 
@@ -229,6 +256,7 @@ body {
 .modal__close {
   cursor: pointer;
   align-self: flex-end;
+
   margin-bottom: 10px;
 }
 
@@ -238,32 +266,35 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 150%;
+
   color: #ffffff;
+
   margin-bottom: 40px;
 }
 
 .modal__img {
-  width: 100%;
-  max-width: 730px;
-  height: auto;
+  width: 730px;
+  height: 410px;
   object-fit: cover;
   margin-bottom: 20px;
 }
 
 .modal__description {
-  max-width: 100%;
-  width: 100%;
+  max-width: 730px;
+
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 150%;
+
   color: #ffffff;
+
   margin-bottom: 20px;
 }
 
 .modal__genre-average {
-  width: 100%;
+  width: 730px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -278,11 +309,13 @@ body {
 .modal__average {
   border-radius: 8px;
   padding: 10px;
+
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 150%;
+
   color: #ffffff;
 }
 
@@ -303,37 +336,4 @@ body:not(.dark-theme) {
 
 body.dark-theme {
   --background-color: #242424;
-}
-
-@media (max-width: 768px) {
-  .header__title {
-    font-size: 28px;
-  }
-
-  .subtitle {
-    font-size: 20px;
-  }
-
-  .movie {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .highlight__video {
-    width: 100%;
-    max-width: none;
-  }
-
-  .highlight__info {
-    max-width: 100%;
-  }
-
-  .modal__img {
-    width: 100%;
-    height: auto;
-  }
-
-  .modal__description {
-    width: 100%;
-  }
 }
